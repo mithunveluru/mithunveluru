@@ -1,25 +1,32 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f6feb,100:388bfd&height=180&section=header&text=Mithun%20Raghu%20Veluru&fontSize=36&fontColor=e6edf3&fontAlignY=38&desc=Software%20Engineer%20%7C%20Full-Stack%20%7C%20Backend%20Systems%20%7C%20ML%20Engineering&descAlignY=58&descSize=14&descColor=8b949e" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,40:0a1628,100:1f6feb&height=200&section=header&text=Mithun%20Raghu%20Veluru&fontSize=38&fontColor=e6edf3&fontAlignY=40&desc=Software%20Engineer%20%E2%80%94%20Full-Stack%20%7C%20Backend%20Systems%20%7C%20ML%20Engineering&descAlignY=60&descSize=14&descColor=58a6ff&animation=fadeIn" />
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1000&color=388BFD&center=true&vCenter=true&width=620&lines=Building+things+that+actually+work.;Full-Stack+%7C+Backend+%7C+Distributed+Systems;From+raw+data+to+deployed+product+%E2%80%94+end+to+end.;Open+to+SWE+%2F+SDE+Internships." />
-</a>
+</div>
+
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=17&pause=1200&color=58A6FF&center=true&vCenter=true&width=650&lines=Building+things+that+actually+work.;Backend+%7C+Full-Stack+%7C+Distributed+Systems;From+raw+data+to+deployed+product+%E2%80%94+end+to+end.;Clean+APIs.+Solid+architecture.+Real+benchmarks.;Open+to+SWE+%2F+SDE+Internships." />
+  </a>
+</div>
 
 <br/>
 
-<a href="https://mithundev.vercel.app">
-  <img src="https://img.shields.io/badge/Portfolio-mithundev.vercel.app-388bfd?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0d1117"/>
-</a>
-<a href="mailto:mithunveluru@gmail.com">
-  <img src="https://img.shields.io/badge/Email-mithunveluru@gmail.com-1f6feb?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117"/>
-</a>
-<a href="https://linkedin.com/in/mithunveluru">
-  <img src="https://img.shields.io/badge/LinkedIn-mithunveluru-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117"/>
-</a>
-<img src="https://komarev.com/ghpvc/?username=mithunveluru&style=for-the-badge&color=388bfd&label=PROFILE+VIEWS&labelColor=0d1117"/>
-
+<div align="center">
+  <a href="https://mithundev.vercel.app">
+    <img src="https://img.shields.io/badge/Portfolio-mithundev.vercel.app-1f6feb?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0d1117"/>
+  </a>
+  &nbsp;
+  <a href="mailto:mithunveluru@gmail.com">
+    <img src="https://img.shields.io/badge/Email-mithunveluru@gmail.com-58a6ff?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117"/>
+  </a>
+  &nbsp;
+  <a href="https://linkedin.com/in/mithunveluru">
+    <img src="https://img.shields.io/badge/LinkedIn-mithunveluru-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117"/>
+  </a>
 </div>
+
+<br/>
 
 ---
 
@@ -27,13 +34,13 @@
 
 ```python
 engineer = {
-    "name"      : "Mithun Raghu Veluru",
-    "degree"    : "B.Tech CSE — VIT Vellore (2027)",
-    "stack"     : ["Python", "Java", "Go", "React", "FastAPI", "Docker"],
-    "builds"    : "end-to-end systems: API → pipeline → dashboard → deployed",
-    "strengths" : ["Backend Architecture", "Distributed Systems", "ML Engineering"],
-    "currently" : "open to SWE / SDE internships",
-    "fact"      : "ships with CI/CD, not just runs locally"
+    "name"       : "Mithun Raghu Veluru",
+    "degree"     : "B.Tech CSE — VIT Vellore (2027)",
+    "stack"      : ["Python", "Java", "C++", "React", "FastAPI", "Docker"],
+    "builds"     : "end-to-end: API → pipeline → dashboard → deployed",
+    "strengths"  : ["Backend Architecture", "Distributed Systems", "ML Engineering"],
+    "currently"  : "open to SWE / SDE internships",
+    "ships_with" : ["CI/CD", "Docker", "proper tests — not just local demos"]
 }
 ```
 
@@ -54,7 +61,7 @@ engineer = {
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![REST](https://img.shields.io/badge/REST_API-388bfd?style=flat-square&logo=api&logoColor=white)
+![REST](https://img.shields.io/badge/REST_API-58a6ff?style=flat-square&logoColor=white)
 
 **Frontend**
 
@@ -92,9 +99,9 @@ engineer = {
 ### Aviation Failure Intelligence System
 `Python` `XGBoost` `FastAPI` `React` `Docker` `HDBSCAN`
 
-Took 5,200+ real NTSB incident reports and built a full ML pipeline — clustering, LLM extraction, and a 650-feature classifier auto-triaging crash causes across 4 severity levels. Deployed as a proper full-stack app, not a notebook.
+Processed 5,200+ real NTSB incident reports through a full ML pipeline — clustering, LLM extraction, and a 650-feature classifier auto-triaging crash causes across 4 severity levels. Deployed as a proper full-stack app, not a notebook.
 
-**~80% classifier accuracy | Docker Compose | FastAPI + React**
+**~80% accuracy | Docker Compose | FastAPI + React**
 
 </td>
 <td width="50%" valign="top">
@@ -102,9 +109,9 @@ Took 5,200+ real NTSB incident reports and built a full ML pipeline — clusteri
 ### CreditFL — Federated Learning Credit Risk
 `PyTorch` `Flower` `FastAPI` `React`
 
-Distributed training system across banking silos — no raw data ever leaves a node. Weighted aggregation to handle Non-IID drift, 94% of centralized AUC, 18% better than any silo alone.
+Distributed training across banking silos — no raw data ever leaves a node. Weighted aggregation handles Non-IID drift, hitting 94% of centralized AUC and 18% better than any silo alone.
 
-**Privacy-preserving | Production-ready dashboard | Real benchmarks**
+**Privacy-preserving | Production dashboard | Real benchmarks**
 
 </td>
 </tr>
@@ -114,7 +121,7 @@ Distributed training system across banking silos — no raw data ever leaves a n
 ### BlockAudit — Network Security Audit Platform
 `Python` `WebSockets` `SHA-256` `Merkle Trees`
 
-Real-time packet monitoring at 2,000+ packets/sec, sub-10ms threat detection. Blockchain-backed audit trail — SHA-256 + Merkle Tree verification means tampered logs get caught instantly.
+Real-time packet monitoring at 2,000+ packets/sec, sub-10ms threat detection. Blockchain-backed audit trail — tampered logs get caught instantly.
 
 **2000+ pkt/sec | <10ms latency | Tamper-proof logs**
 
@@ -122,7 +129,9 @@ Real-time packet monitoring at 2,000+ packets/sec, sub-10ms threat detection. Bl
 <td width="50%" valign="top">
 
 ### More on Portfolio
-Check out [mithundev.vercel.app](https://mithundev.vercel.app) for the full picture — live demos, write-ups, and what I'm currently building.
+
+Full write-ups, live demos, and what's currently being built at
+**[mithundev.vercel.app](https://mithundev.vercel.app)**
 
 </td>
 </tr>
@@ -134,17 +143,42 @@ Check out [mithundev.vercel.app](https://mithundev.vercel.app) for the full pict
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=mithunveluru&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=388bfd&icon_color=1f6feb&text_color=e6edf3&rank_icon=github" height="160"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mithunveluru&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=388bfd&text_color=e6edf3&langs_count=8" height="160"/>
+<img src="https://github-readme-stats.vercel.app/api?username=mithunveluru&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=e6edf3&rank_icon=github" height="165"/>
+&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mithunveluru&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&langs_count=8" height="165"/>
 
-<br/>
+<br/><br/>
 
-<img src="https://streak-stats.demolab.com?user=mithunveluru&theme=github-dark-blue&hide_border=true&background=0d1117&ring=388bfd&fire=1f6feb&currStreakLabel=388bfd"/>
+<img src="https://streak-stats.demolab.com?user=mithunveluru&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=1f6feb&currStreakLabel=58a6ff"/>
 
-<br/>
+</div>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=mithunveluru&theme=github-compact&bg_color=0d1117&color=388bfd&line=1f6feb&point=e6edf3&hide_border=true"/>
+---
 
+## Trophies
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=mithunveluru&theme=gitdimmed&no-frame=true&no-bg=true&column=7&margin-w=4" />
+</div>
+
+---
+
+## Contribution Activity
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mithunveluru&theme=github-compact&bg_color=0d1117&color=58a6ff&line=1f6feb&point=e6edf3&hide_border=true&area=true&area_color=1f6feb" />
+</div>
+
+---
+
+## Contribution Snake
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mithunveluru/mithunveluru/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mithunveluru/mithunveluru/output/github-snake.svg" />
+    <img alt="github-snake" src="https://raw.githubusercontent.com/mithunveluru/mithunveluru/output/github-snake-dark.svg" />
+  </picture>
 </div>
 
 ---
@@ -158,5 +192,5 @@ Check out [mithundev.vercel.app](https://mithundev.vercel.app) for the full pict
 ---
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:388bfd,50:1f6feb,100:0d1117&height=100&section=footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,60:0a1628,100:0d1117&height=120&section=footer"/>
 </div>
