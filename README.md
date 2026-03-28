@@ -143,10 +143,15 @@ Full write-ups, live demos, and what's currently being built at
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=mithunveluru&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=e6edf3&rank_icon=github" height="165"/>
+<img src="https://github-stats-alpha.vercel.app/api?username=mithunveluru&cc=0d1117&tc=58a6ff&ic=1f6feb&bc=0d1117" height="160"/>
 &nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mithunveluru&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&langs_count=8" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mithunveluru&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&langs_count=8" height="160"/>
 
+<br/><br/>
+
+<img src="https://github-readme-streak-stats-eight.vercel.app?user=mithunveluru&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=1f6feb&currStreakLabel=58a6ff"/>
+
+</div>
 <br/><br/>
 
 <img src="https://streak-stats.demolab.com?user=mithunveluru&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=1f6feb&currStreakLabel=58a6ff"/>
@@ -155,13 +160,11 @@ Full write-ups, live demos, and what's currently being built at
 
 ---
 
-## Trophies
+## Activity
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=mithunveluru&theme=gitdimmed&no-frame=true&no-bg=true&column=7&margin-w=4" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mithunveluru&theme=github-compact&bg_color=0d1117&color=58a6ff&line=1f6feb&point=e6edf3&hide_border=true&area=true&area_color=1f6feb" />
 </div>
-
----
 
 ## Contribution Activity
 
