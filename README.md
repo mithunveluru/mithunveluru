@@ -28,7 +28,7 @@
 
 <br/>
 
----
+
 
 ## About
 
@@ -44,7 +44,6 @@ engineer = {
 }
 ```
 
----
 
 ## Tech Stack
 
@@ -88,7 +87,7 @@ engineer = {
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 
----
+
 
 ## Projects
 
@@ -137,7 +136,6 @@ Full write-ups, live demos, and what's currently being built at
 </tr>
 </table>
 
----
 
 ## GitHub Stats
 
@@ -149,22 +147,11 @@ Full write-ups, live demos, and what's currently being built at
 
 <br/><br/>
 
-<img src="https://github-readme-streak-stats-eight.vercel.app?user=mithunveluru&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=1f6feb&currStreakLabel=58a6ff"/>
-
-</div>
-<br/><br/>
-
 <img src="https://streak-stats.demolab.com?user=mithunveluru&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=1f6feb&currStreakLabel=58a6ff"/>
 
 </div>
 
----
 
-## Activity
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mithunveluru&theme=github-compact&bg_color=0d1117&color=58a6ff&line=1f6feb&point=e6edf3&hide_border=true&area=true&area_color=1f6feb" />
-</div>
 
 ## Contribution Activity
 
@@ -172,7 +159,7 @@ Full write-ups, live demos, and what's currently being built at
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=mithunveluru&theme=github-compact&bg_color=0d1117&color=58a6ff&line=1f6feb&point=e6edf3&hide_border=true&area=true&area_color=1f6feb" />
 </div>
 
----
+
 
 ## Contribution Snake
 
@@ -184,7 +171,6 @@ Full write-ups, live demos, and what's currently being built at
   </picture>
 </div>
 
----
 
 ## Highlights
 
