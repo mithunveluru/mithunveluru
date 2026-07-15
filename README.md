@@ -34,7 +34,6 @@
 engineer = {
     "name"       : "Mithun Raghu Veluru",
     "degree"     : "B.Tech CSE — VIT Vellore (Class of 2027)",
-    "currently"  : "Software Engineer Intern @ Hanco Automotive",
     "stack"      : ["Python", "Java", "TypeScript", "React", "Next.js", "Spring Boot", "FastAPI"],
     "focus"      : ["Full-Stack Systems", "AI / RAG Pipelines", "Data Platforms"],
     "builds"     : "end-to-end: data -> pipeline -> API -> deployed product",
