@@ -14,11 +14,9 @@
 
 <br>
 
-I build the parts of a product that still have to work after the demo ends — the ingestion job that doesn't choke on a bad file, the endpoint that degrades instead of falling over, the query that's still fast once real data shows up instead of the clean seed data.
+I'm a CS student at VIT Vellore (class of 2027), currently interning at Hanco Automotive in Jeddah, where I'm building the booking engine and admin tooling behind a luxury car-rental platform. Most of my other projects live in the same general area — backend systems, data pipelines, and the unglamorous plumbing that keeps an app working once real users and real data show up.
 
-B.Tech Computer Science, VIT Vellore, class of 2027. Currently building the booking engine behind a luxury car-rental platform at Hanco Automotive, in Jeddah.
-
-Most of what I've learned about building useful software didn't come from documentation — it came from noticing that the technically cleaner solution and the one someone actually needs aren't always the same thing, and that the gap between them only shows up once you've watched how they actually use what you built. Working on something meant for a market I didn't grow up in has made that harder to ignore: assumptions I'd otherwise never question turn out not to travel. I'd rather build with people who see a problem differently than I do than around them.
+I like picking a problem, figuring out where it actually breaks, and building the smallest thing that fixes that specific part well. A lot of what's below came out of that: decoupling a slow job from the request path, isolating a flaky worker so it can't take the rest of the system down with it, that kind of thing.
 
 ---
 
@@ -28,72 +26,43 @@ Most of what I've learned about building useful software didn't come from docume
 |---|---|
 | **Building** | Booking engine and admin tooling for a car-rental platform, at Hanco Automotive |
 | **Shipped** | FlowSight · ClearClause · Schedora · FileLens |
-| **Exploring** | Distributed systems · retrieval · observability |
-
-## Currently trying to understand
-
-What actually happens when a distributed system stops agreeing with itself — replicas drift, a dependency goes quiet, a queue backs up faster than it drains, and latency stops being a single number worth quoting.
-
-How to make a system observable enough that debugging it doesn't come down to reading logs and hoping something looks wrong.
-
-Where hybrid retrieval quietly breaks — the queries neither a vector index nor a keyword index handles well on its own, and why.
+| **Reading up on** | Distributed systems, hybrid retrieval, observability |
 
 ## Projects
 
 ### FlowSight — behavioral finance platform
 `Java · Spring Boot · PostgreSQL · React · Docker`
 
-Categorizing bank and receipt data by hand stops scaling past a handful of accounts, and most tools that promise to help either lock you into their own bank integrations or eventually just hand the work back to you as a spreadsheet.
+Started this because categorizing bank and receipt data by hand stops being feasible once you're past a handful of accounts, and most tools that promise to automate it either lock you into their own bank integrations or just hand the mess back to you as a spreadsheet.
 
-FlowSight ingests raw transaction and receipt data and turns it into categorized, forecastable spend — 21 analytics modules behind a single API surface. The part worth mentioning isn't the categorization logic; it's that receipt OCR runs as an async job instead of inline with the upload, so someone uploading a receipt isn't stuck waiting on a pipeline that might be slow — and the ingestion endpoint is rate-limited so a burst of uploads can't take the OCR workers down with it. Decoupling the slow part from the request path mattered more than optimizing the slow part itself.
-
-**21 analytics modules · async OCR · rate-limited ingestion**
+FlowSight ingests raw transaction and receipt data and turns it into categorized, forecastable spend across 21 analytics modules. The one design choice I'd point to: receipt OCR runs as an async job rather than inline with the upload, so uploading a receipt doesn't mean waiting on a pipeline that might be slow. The ingestion endpoint is also rate-limited, so a burst of uploads can't take the OCR workers down with it.
 
 [View repository ↗](https://github.com/mithunveluru/flowsight)
 
 ### ClearClause — AI document intelligence
 `Python · FastAPI · Celery · Qdrant · PostgreSQL · Next.js`
 
-Pure semantic search finds documents that mean the same thing; it's bad at finding the exact clause, date, or defined term someone is actually looking for. Pure keyword search has the opposite problem.
+Semantic search is good at finding documents that mean the same thing, and bad at finding the exact clause, date, or defined term you're actually looking for. Keyword search has the opposite problem. ClearClause runs both — hybrid vector-and-keyword retrieval over legal documents, covering 26 document types.
 
-ClearClause runs hybrid vector-and-keyword retrieval over legal documents across 26 document types. Ingestion, retrieval, and entity extraction run as separate pipeline stages — entity extraction specifically on its own isolated Celery workers — so a slow extraction job never becomes the reason a search feels slow. Retrieval quality and retrieval latency ended up being a product decision as much as an algorithmic one: the two needed to be able to fail independently of each other.
-
-**26 document types · hybrid retrieval · isolated extraction workers**
+Ingestion, retrieval, and entity extraction each run as their own pipeline stage, with entity extraction on isolated Celery workers, so a slow extraction job never becomes the reason search feels slow. Getting retrieval quality and retrieval latency to fail independently of each other turned out to matter as much as the retrieval algorithm itself.
 
 [View repository ↗](https://github.com/mithunveluru/clearclause)
 
 ### Schedora — AI scheduling platform
 `Next.js 14 · Supabase · Google Calendar API · Turborepo`
 
-Most scheduling tools are built for one tenant and get multi-tenancy bolted on afterward, which tends to surface later as one account's data leaking into another's.
+A lot of scheduling tools are built single-tenant first and get multi-tenancy added later, which is usually how you end up with one account's data leaking into another's. Schedora turns natural-language requests into conflict-free calendar events, and enforces tenant isolation with 11 row-level-security policies at the database layer — not the application layer — across 20 API routes.
 
-Schedora turns natural-language requests into conflict-free calendar events, with OAuth 2.0 authentication and 11 row-level-security policies enforcing tenant isolation at the database layer — not the application layer — across 20 API routes. It ships with 219 passing tests, not because the project demanded it, but because a scheduling tool that's occasionally wrong about a meeting time is worse than one that simply does less.
-
-**11 RLS policies · 20 API routes · 219 tests**
+It also ships with 219 passing tests. Not because the project needed that many, but because a scheduling tool that's occasionally wrong about a meeting time is worse than one that just does less.
 
 [View live demo ↗](https://schedora-web.vercel.app)
 
 ### FileLens — cross-platform file manager
 `Rust · Tauri 2 · React 19 · TypeScript · SQLite`
 
-Hashing and comparing a large set of files on a single thread is slow enough that a duplicate-cleanup tool becomes a tool you stop bothering to run.
-
-FileLens is a native desktop app — Rust backend, React frontend over Tauri — built to be fast enough that you'd actually use it. A concurrent detection engine spreads BLAKE3 hashing across an 8-thread worker pool, with native IPC between Rust and the UI so the interface doesn't freeze mid-hash. BLAKE3 over SHA-256 was a deliberate call, for the throughput difference at the volumes this tool runs at.
-
-**8-thread worker pool · BLAKE3 hashing · native IPC**
+Hashing and comparing a large set of files on a single thread is slow enough that a duplicate-cleanup tool becomes a tool you stop bothering to open. FileLens is a native desktop app — Rust backend, React frontend over Tauri — with a concurrent detection engine that spreads BLAKE3 hashing across an 8-thread worker pool. Native IPC between Rust and the UI keeps the interface responsive mid-hash. I went with BLAKE3 over SHA-256 deliberately, for the throughput difference at the volumes this actually runs at.
 
 [View repository ↗](https://github.com/mithunveluru/FileLens)
-
-<details>
-<summary><strong>A few of the decisions behind these, distilled</strong></summary>
-<br>
-
-- **FlowSight** — decouple the slow part from the request path before you try to optimize the slow part itself.
-- **ClearClause** — retrieval and extraction need to be able to fail independently of each other.
-- **Schedora** — enforce isolation at the database layer, not the application layer.
-- **FileLens** — pick the hash function for the throughput the workload actually needs, not the one everyone defaults to.
-
-</details>
 
 More detail on each at [mithundev.vercel.app](https://mithundev.vercel.app).
 
@@ -139,7 +108,7 @@ More detail on each at [mithundev.vercel.app](https://mithundev.vercel.app).
 ![Vercel](https://img.shields.io/badge/Vercel-161b22?style=flat-square&logo=vercel&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-161b22?style=flat-square&logo=supabase&logoColor=white)
 
-Every repo above runs a Docker-based local environment and CI on every push, with a README that explains scope and tradeoffs rather than just setup steps.
+Every repo above has a Docker-based local setup and runs CI on every push, with a README that explains scope and tradeoffs rather than just install steps.
 
 ## Experience
 
