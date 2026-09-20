@@ -4,7 +4,7 @@
 
 Backend engineer, into distributed systems and full stack products.
 
-[Portfolio](https://mithundev.vercel.app) · [GitHub](https://github.com/mithunveluru) · [LinkedIn](https://linkedin.com/in/mithunveluru) · [Email](mailto:mithunveluru7@gmail.com)
+[Portfolio](https://mithunveluru.is-a.dev) · [GitHub](https://github.com/mithunveluru) · [LinkedIn](https://linkedin.com/in/mithunveluru) · [Email](mailto:mithunveluru7@gmail.com)
 
 </div>
 
@@ -14,7 +14,7 @@ I like building things that still hold up once real traffic and messy data show 
 
 **Right now:** I'm interning as a Software Engineer at Hanco Automotive in Jeddah, working on a luxury car rental platform end to end. That's the customer site, the booking engine, and the admin tools, built on Next.js, TypeScript, and Supabase, deployed on Vercel behind Cloudflare.
 
-More about me and my work is on my site: [mithundev.vercel.app](https://mithundev.vercel.app)
+More about me and my work is on my site: [mithundev.is-a.dev](https://mithunveluru.is-a.dev/)
 
 ---
 
@@ -66,7 +66,7 @@ Turns something like "move the standup to after lunch" into a scheduled, conflic
 
 A desktop app that shows you what's actually filling up your Downloads folder and lets you clean it up without worrying you'll lose something. Duplicate detection happens in three tiers, size grouping first, then a sampled BLAKE3 fingerprint over three 64KB windows, then a full hash, so most files that aren't actually duplicates never get fully hashed. Hashing runs on a bounded worker pool capped deliberately, since both stages are I/O bound past a certain point. Every destructive action gets previewed and needs explicit confirmation, nothing on disk changes without you saying so.
 
-More projects are up on my [portfolio](https://mithundev.vercel.app).
+More projects are up on my [portfolio](https://mithunveluru.is-a.dev/).
 
 ---
 
